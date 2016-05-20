@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    	xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+    	android:theme="@android:style/Theme.NoTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#FFF">
+ 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:gravity="center"
+        android:paddingBottom="5dp"
+        android:paddingTop="3dp"
+        android:background="#b1689f" >
+
+        <ImageButton
+            android:id="@+id/btnGlobalReview"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_marginTop="6dp"
+            android:layout_marginRight="6dp"
+            android:background="#b1689f"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/broadcast" />
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:paddingTop="3dp"
+            android:text="GROUP"
+            android:textColor="#FFF"
+            android:textSize="30dp" />
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/textView1"
+            android:layout_marginTop="6dp"
+            android:background="#b1689f"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_button" />
+        
+ 
+    </RelativeLayout>
+ 
+   <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="58dp">
+ 
+        <ImageButton
+            android:id="@+id/btnReviews"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:scaleType="fitCenter"
+            android:background="@drawable/textlines"
+            android:src="@drawable/reviewcurrent"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"  />
+ 
+        <ImageButton
+            android:id="@+id/btnMembers"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.00"
+            android:background="@drawable/textlines"
+            android:scaleType="fitCenter"
+            android:src="@drawable/members"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp" />
+       
+    </LinearLayout>
+
+   <FrameLayout
+       android:id="@+id/group_name_container"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+   </FrameLayout>
+   
+</LinearLayout>

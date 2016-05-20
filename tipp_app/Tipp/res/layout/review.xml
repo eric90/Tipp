@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+   
+    <TextView
+        android:id="@+id/review_rating1"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/review_rating"
+        android:text="" />
+ 
+        <TextView
+            android:id="@+id/gsearchtitle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gsearchtitle"
+            android:layout_below="@+id/review_rating"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:paddingBottom="13dp"
+            android:paddingRight="7dp"
+            android:paddingTop="10dp"
+            android:text="10:25:91"
+            android:textColor="#0D134E"
+            android:textSize="10dp" />
+ 
+        <TextView
+            android:id="@+id/gsearchtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="46dp"
+            android:layout_toRightOf="@+id/review_rating1"
+            android:maxLines="3"
+            android:paddingBottom="13dp"
+            android:paddingRight="7dp"
+            android:paddingTop="10dp"
+            android:text="Hello This is a test review"
+            android:textColor="#0D134E"
+            android:textSize="15dp" />
+ 
+        <TextView
+            android:id="@+id/review_rating2"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/gsearchtitle1"
+            android:layout_alignBottom="@+id/gsearchtitle1"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/gsearchtitle"
+            android:text="" />
+ 
+        <ImageView
+            android:id="@+id/review_rating"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/review_rating1"
+            android:layout_marginLeft="15dp"
+            android:height="1dp"
+            android:src="@drawable/ratingfour"
+            android:width="1dp" />
+   
+</RelativeLayout>
